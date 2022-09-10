@@ -1,0 +1,347 @@
+body{
+  font-famili:'Helvetica Neue', 'Arial', sans-serif; 
+}
+
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  margin-bottom: 100px;
+  position: relative;
+  background-color: #f2f2f2;
+
+    
+  /* выше установили ограничения для секции */
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+.logo{
+  background-image: url(../images/logo_place_header.svg);
+}
+.logo__place_header{
+  height: 32px;
+  width: 228px;
+  position: absolute;
+  left: 64px;
+  top:30px;
+}
+.header__title{
+  width: 730px;
+  margin: auto;
+  margin-left: 64px;
+  justify-content: center;
+}
+.header__title_text{
+  margin: 0px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+.header__subtitle{
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  padding: 0;
+}
+.header__subtitle_text{
+  margin: 0;
+  font-size:18px;
+  line-height: 25px; 
+  font-weight: normal;
+}
+.header__main-illustration{
+  background-image: url(../images/header-image.png);
+  width: 765px;
+  height: 608px;
+  position:absolute;
+  right: 0px;
+  bottom: 0px;
+  background-size:cover;
+  z-index: 1;
+}
+.header__square-pic{
+  background-color:#2f80ed;
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top:64px;
+  right: 0px;
+}
+
+
+  /*description*/
+
+
+
+.description{
+  min-height: 250px;
+}
+.description__two-columns{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.description__two-columns_brief{
+  width: 175px;
+}
+.bries__link{
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.description__two-columns_main-text{
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.description__two-columns_paragraph{
+  font-size: 24px;
+  line-height: 34px;
+  font-weight:normal;
+}
+.text__margin{
+  margin: 30px 0px 30px 0px;
+}
+.paragraph__text{
+margin: 0;
+}
+.two-columns__paragraph_text{
+  font-size: 24;
+  line-height:normal;  
+  font-weight:600;
+}
+
+
+/*digital*/
+
+
+.digital{
+  margin: 100px auto 100px;
+}
+.section-title{
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+.section-title__text{
+  font-size:34px;
+  line-height:1.15;
+  font-weight: 600;
+  margin: 0;
+}
+.section-subtitle{
+  width: 60%;
+  margin: 20px auto 0px;
+  justify-content: center;
+  display: flex;
+}
+.section-subtitle__text{
+  font-size:24px;
+  line-height:34px;
+  font-weight: normal;
+  margin: 0;
+}
+.table{
+  width: 1100px;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.table__text_theme_wait{
+  margin-top: 60px;
+  width: 250px;
+}
+.table__heading{
+  font-size:24px;
+  line-height:1.15;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+.table__text{
+  font-size:18px;
+  line-height:1.2;
+  font-weight: normal;
+  margin: 0;
+}
+.table__text_span{
+  margin-top: 20px;
+}
+
+
+
+/*feynman*/
+
+
+
+.feynman{
+  height: 890px;
+  background-color: #f2f2f2;
+  background-image:url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.feynman__title{
+  width:648px;
+  margin: 100px auto 70px;
+}
+.feynman__title_text{
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.feynman__subtitle{
+  width:648px;
+  position: relative;
+  margin: 0 auto 0;
+}
+.feynman__subtitle_text{
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  text-align: center;
+  margin:0;
+}
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right:48px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+
+/*kaufman*/
+
+
+
+.kaufman{
+  position: relative;
+  overflow: hidden; 
+  margin: 0px auto 0px;
+  padding: 90px 0 90px;
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  z-index: 3;
+  background-size:contain;
+}
+.table__text_theme_dark{
+  z-index: 2;
+}
+.table__theme_dark{
+  width: 200px;
+  margin-top: 80px;
+}
+.kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  position:absolute;
+  right: -210px;
+  top: 0px;
+  background-size:cover;
+  z-index: 1;
+}
+
+
+/*footer*/
+
+
+.footer{
+  background-color: #1f1f1f;
+  padding: 60px 0 40px;
+}
+.footer_columns{
+  display: flex;
+  width: 90%;
+  min-height: 350px;
+  justify-content: space-between;
+  text-align: center;
+  margin:auto
+}
+
+.logo__place_footer{
+  background-image: url(../images/logo_place_footer.svg);
+  height: 32px;
+  width: 228px;
+  z-index: 10;
+}
+.footer__columns_content_copiring{
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.author{
+  color: #f2f2f2;
+  text-align: left;
+}
+.author__text{
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+.footer__columns_content_info{
+  color: #f2f2f2;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.footer__column-heding{
+  color: #f2f2f2;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.footer__column-links{
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-link{
+  color: #f2f2f2;
+  margin-bottom: 16px;
+  text-align: left;
+
+}
+.link__margin{
+  margin-right: 10px;
+}
